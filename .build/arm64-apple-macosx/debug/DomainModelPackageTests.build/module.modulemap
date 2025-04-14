@@ -1,0 +1,4 @@
+module DomainModelPackageTests {
+    header "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/DomainModelPackageTests-Swift.h"
+    requires objc
+}

@@ -1,0 +1,112 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "DomainModel-arm64-apple-macosx15.0-debug.module": ["<DomainModel-arm64-apple-macosx15.0-debug.module>"]
+  "DomainModelPackageTests-arm64-apple-macosx15.0-debug.module": ["<DomainModelPackageTests-arm64-apple-macosx15.0-debug.module>"]
+  "DomainModelPackageTests-arm64-apple-macosx15.0-debug.test": ["<DomainModelPackageTests-arm64-apple-macosx15.0-debug.test>"]
+  "DomainModelTests-arm64-apple-macosx15.0-debug.module": ["<DomainModelTests-arm64-apple-macosx15.0-debug.module>"]
+  "PackageStructure": ["<PackageStructure>"]
+  "main": ["<DomainModel-arm64-apple-macosx15.0-debug.module>"]
+  "test": ["<DomainModel-arm64-apple-macosx15.0-debug.module>","<DomainModelPackageTests-arm64-apple-macosx15.0-debug.test>","<DomainModelTests-arm64-apple-macosx15.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Sources/DomainModel/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+commands:
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Sources/DomainModel/DomainModel.swift"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/sources"]
+    description: "Write auxiliary file /Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/sources"
+
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.derived/runner.swift"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/sources"]
+    description: "Write auxiliary file /Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/sources"
+
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.derived/runner.swift":
+    tool: test-entry-point-tool
+    inputs: []
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.derived/runner.swift"]
+
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/runner.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swift.o"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.product/Objects.LinkFileList"
+
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/DomainModelTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/JobTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/MoneyTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/PersonTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/XCTestManifests.swift"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/sources"]
+    description: "Write auxiliary file /Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/sources"
+
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<DomainModel-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModel.swiftmodule"]
+    outputs: ["<DomainModel-arm64-apple-macosx15.0-debug.module>"]
+
+  "<DomainModelPackageTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/runner.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelPackageTests.swiftmodule"]
+    outputs: ["<DomainModelPackageTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "<DomainModelPackageTests-arm64-apple-macosx15.0-debug.test>":
+    tool: phony
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.xctest/Contents/MacOS/DomainModelPackageTests"]
+    outputs: ["<DomainModelPackageTests-arm64-apple-macosx15.0-debug.test>"]
+
+  "<DomainModelTests-arm64-apple-macosx15.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelTests.swiftmodule"]
+    outputs: ["<DomainModelTests-arm64-apple-macosx15.0-debug.module>"]
+
+  "C.DomainModel-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Sources/DomainModel/DomainModel.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/sources"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModel.swiftmodule"]
+    description: "Compiling Swift Module 'DomainModel' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","DomainModel","-emit-dependencies","-emit-module","-emit-module-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModel.swiftmodule","-output-file-map","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/sources","-I","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel-Swift.h","-color-diagnostics","-swift-version","5","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "C.DomainModelPackageTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.derived/runner.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelTests.swiftmodule","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/sources"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/runner.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelPackageTests.swiftmodule"]
+    description: "Compiling Swift Module 'DomainModelPackageTests' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","DomainModelPackageTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelPackageTests.swiftmodule","-output-file-map","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/sources","-I","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-emit-objc-header","-emit-objc-header-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/DomainModelPackageTests-Swift.h","-color-diagnostics","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "C.DomainModelPackageTests-arm64-apple-macosx15.0-debug.test":
+    tool: shell
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.build/runner.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.product/Objects.LinkFileList"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.xctest/Contents/MacOS/DomainModelPackageTests"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/DomainModelPackageTests.xctest/Contents/MacOS/DomainModelPackageTests"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug","-o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.xctest/Contents/MacOS/DomainModelPackageTests","-module-name","DomainModelPackageTests","-Xlinker","-no_warn_duplicate_libraries","-Xlinker","-bundle","-Xlinker","-rpath","-Xlinker","@loader_path/../../../","@/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelPackageTests.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-5.5/macosx","-target","arm64-apple-macosx10.13","-Xlinker","-add_ast_path","-Xlinker","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModel.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelPackageTests.swiftmodule","-Xlinker","-add_ast_path","-Xlinker","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelTests.swiftmodule","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/Library/Developer/Frameworks"]
+
+  "C.DomainModelTests-arm64-apple-macosx15.0-debug.module":
+    tool: shell
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/DomainModelTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/JobTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/MoneyTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/PersonTests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/XCTestManifests.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModel.swiftmodule","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/sources"]
+    outputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swift.o","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelTests.swiftmodule"]
+    description: "Compiling Swift Module 'DomainModelTests' (5 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","DomainModelTests","-emit-dependencies","-emit-module","-emit-module-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules/DomainModelTests.swiftmodule","-output-file-map","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/output-file-map.json","-parse-as-library","-incremental","-c","@/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/sources","-I","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx10.13","-enable-batch-mode","-index-store-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j8","-DSWIFT_PACKAGE","-DDEBUG","-module-cache-path","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-parse-as-library","-color-diagnostics","-swift-version","5","-F","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Sources/DomainModel/","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Package.swift","/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

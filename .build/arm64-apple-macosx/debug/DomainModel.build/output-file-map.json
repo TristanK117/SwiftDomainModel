@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/master.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Sources/DomainModel/DomainModel.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModel.build/DomainModel.swiftdeps"
+  }
+}

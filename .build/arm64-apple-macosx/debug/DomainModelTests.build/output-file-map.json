@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/master.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/DomainModelTests.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/DomainModelTests.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/JobTests.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/JobTests.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/MoneyTests.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/MoneyTests.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/PersonTests.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/PersonTests.swiftdeps"
+  },
+  "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/Tests/DomainModelTests/XCTestManifests.swift": {
+    "dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.d",
+    "object": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swift.o",
+    "swiftmodule": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests~partial.swiftmodule",
+    "swift-dependencies": "/Users/tristankhieu/UW/INFO_449/SwiftDomainModel/.build/arm64-apple-macosx/debug/DomainModelTests.build/XCTestManifests.swiftdeps"
+  }
+}
